@@ -1,0 +1,841 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Privacy Policy for LafzX, an offline English-to-Urdu dictionary and vocabulary learning application."
+  />
+
+  <meta name="theme-color" content="#183153" />
+
+  <title>Privacy Policy | LafzX</title>
+
+  <style>
+    :root {
+      --background: #f5f7fb;
+      --surface: #ffffff;
+      --surface-secondary: #eef3f8;
+      --primary: #183153;
+      --primary-light: #29527f;
+      --accent: #1f8a70;
+      --text: #192536;
+      --text-secondary: #5d6b7a;
+      --border: #dce4ed;
+      --success-background: #eaf8f3;
+      --success-border: #b7e5d4;
+      --shadow: 0 18px 50px rgba(24, 49, 83, 0.1);
+      --radius-large: 24px;
+      --radius-medium: 16px;
+      --content-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(31, 138, 112, 0.1),
+          transparent 32%
+        ),
+        linear-gradient(180deg, #f8fafc 0%, var(--background) 100%);
+      color: var(--text);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--primary-light);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .page-shell {
+      width: min(calc(100% - 32px), var(--content-width));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 44px;
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(24, 49, 83, 0.98),
+          rgba(31, 138, 112, 0.94)
+        );
+      color: #ffffff;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 23px;
+      font-weight: 800;
+      backdrop-filter: blur(8px);
+    }
+
+    .brand-name {
+      font-size: 21px;
+      font-weight: 750;
+      letter-spacing: 0.2px;
+    }
+
+    .hero h1 {
+      max-width: 680px;
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px 0 0;
+      color: rgba(255, 255, 255, 0.87);
+      font-size: 1.05rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .meta-pill {
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.9rem;
+    }
+
+    .summary-card {
+      margin-top: 24px;
+      padding: 24px;
+      border: 1px solid var(--success-border);
+      border-radius: var(--radius-medium);
+      background: var(--success-background);
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #11624f;
+      font-size: 1.05rem;
+    }
+
+    .summary-card p {
+      margin: 0;
+    }
+
+    .content-card {
+      margin-top: 24px;
+      padding: 38px 42px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-large);
+      background: var(--surface);
+      box-shadow: 0 12px 35px rgba(24, 49, 83, 0.06);
+    }
+
+    .table-of-contents {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background: var(--surface-secondary);
+    }
+
+    .table-of-contents h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .table-of-contents ol {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 30px;
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .table-of-contents a {
+      text-decoration: none;
+    }
+
+    section {
+      scroll-margin-top: 24px;
+      padding-top: 34px;
+    }
+
+    section + section {
+      margin-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--primary);
+      font-size: 1.55rem;
+      line-height: 1.25;
+      letter-spacing: -0.3px;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      color: var(--primary);
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    ul {
+      margin: 12px 0 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .info-item {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fbfcfe;
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--primary);
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: #eef9f6;
+    }
+
+    .contact-card {
+      margin-top: 20px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(24, 49, 83, 0.05),
+          rgba(31, 138, 112, 0.07)
+        );
+    }
+
+    .contact-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: var(--surface-secondary);
+      color: var(--primary);
+      font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace;
+      font-size: 0.92em;
+    }
+
+    footer {
+      padding: 28px 16px 0;
+      color: var(--text-secondary);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .footer-brand {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    @media (max-width: 720px) {
+      .page-shell {
+        width: min(calc(100% - 20px), var(--content-width));
+        padding-top: 14px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+        border-radius: 20px;
+      }
+
+      .content-card {
+        padding: 26px 22px;
+        border-radius: 20px;
+      }
+
+      .table-of-contents ol,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        gap: 8px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d141d;
+        --surface: #131e2a;
+        --surface-secondary: #192635;
+        --primary: #c6daf4;
+        --primary-light: #99c5f2;
+        --accent: #62d7b4;
+        --text: #e6edf5;
+        --text-secondary: #aab8c7;
+        --border: #2a3a4c;
+        --success-background: #102a25;
+        --success-border: #235d50;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(31, 138, 112, 0.13),
+            transparent 32%
+          ),
+          linear-gradient(180deg, #101923 0%, var(--background) 100%);
+      }
+
+      .info-item {
+        background: #152230;
+      }
+
+      .notice {
+        background: #102a25;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page-shell {
+        width: 100%;
+        padding: 0;
+      }
+
+      .hero,
+      .content-card {
+        box-shadow: none;
+      }
+
+      .hero {
+        color: #000000;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+      }
+
+      .hero p,
+      .meta-pill {
+        color: #222222;
+      }
+
+      .meta-pill {
+        border-color: #cccccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="brand-row">
+        <div class="brand-mark" aria-hidden="true">L</div>
+        <div class="brand-name">LafzX</div>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        This Privacy Policy explains how LafzX handles information when you
+        use our offline English-to-Urdu dictionary and vocabulary-learning
+        application.
+      </p>
+
+      <div class="hero-meta">
+        <span class="meta-pill">Last updated: 27 July 2026</span>
+        <span class="meta-pill">Package: com.lafzx.dictionary</span>
+        <span class="meta-pill">Offline application</span>
+      </div>
+    </header>
+
+    <div class="summary-card">
+      <strong>Privacy summary</strong>
+
+      <p>
+        LafzX works offline and does not require an account. We do not collect,
+        transmit, sell, rent, or share your personal information. Your saved
+        words, learning history, quiz progress, and preferences remain locally
+        on your device, subject to your Android backup and device-transfer
+        settings.
+      </p>
+    </div>
+
+    <article class="content-card">
+      <nav class="table-of-contents" aria-label="Privacy Policy contents">
+        <h2>Contents</h2>
+
+        <ol>
+          <li><a href="#about">About LafzX</a></li>
+          <li><a href="#information">Information we collect</a></li>
+          <li><a href="#local-data">Information stored locally</a></li>
+          <li><a href="#permissions">App permissions</a></li>
+          <li><a href="#internet">Internet and network access</a></li>
+          <li><a href="#third-parties">Third-party services</a></li>
+          <li><a href="#advertising">Advertising and analytics</a></li>
+          <li><a href="#backup">Android backup and transfer</a></li>
+          <li><a href="#children">Children's privacy</a></li>
+          <li><a href="#security">Data security</a></li>
+          <li><a href="#retention">Data retention and deletion</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ol>
+      </nav>
+
+      <section id="about">
+        <h2>1. About LafzX</h2>
+
+        <p>
+          LafzX is an offline English-to-Urdu dictionary and vocabulary-learning
+          application. It is designed to help students and other users search,
+          understand, save, and practise useful English words and their Urdu
+          meanings.
+        </p>
+
+        <p>
+          The application may include features such as dictionary search,
+          A-to-Z vocabulary browsing, word details, definitions, examples,
+          pronunciation audio where available, favourites, recently viewed
+          words, learning categories, Word of the Day, quizzes, themes, and
+          local learning progress.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <strong>Application name</strong>
+            LafzX
+          </div>
+
+          <div class="info-item">
+            <strong>Package name</strong>
+            com.lafzx.dictionary
+          </div>
+
+          <div class="info-item">
+            <strong>Primary function</strong>
+            Offline English-to-Urdu dictionary
+          </div>
+
+          <div class="info-item">
+            <strong>Account required</strong>
+            No
+          </div>
+        </div>
+      </section>
+
+      <section id="information">
+        <h2>2. Information We Collect</h2>
+
+        <p>
+          LafzX does not collect personal information from users.
+        </p>
+
+        <p>The application does not ask for or collect information such as:</p>
+
+        <ul>
+          <li>Your name</li>
+          <li>Your email address</li>
+          <li>Your phone number</li>
+          <li>Your postal address</li>
+          <li>Your precise or approximate location</li>
+          <li>Your contacts</li>
+          <li>Your photos, videos, or personal files</li>
+          <li>Your financial or payment information</li>
+          <li>Your device advertising identifier</li>
+          <li>Your browsing history</li>
+          <li>Your passwords or account credentials</li>
+          <li>Your biometric information</li>
+        </ul>
+
+        <p>
+          LafzX does not require account registration, login, or cloud
+          synchronisation.
+        </p>
+      </section>
+
+      <section id="local-data">
+        <h2>3. Information Stored Locally on Your Device</h2>
+
+        <p>
+          To provide its features, LafzX may store limited application data
+          locally on your Android device.
+        </p>
+
+        <p>This local information may include:</p>
+
+        <ul>
+          <li>Words added to favourites or saved lists</li>
+          <li>Recently viewed words and local history</li>
+          <li>Quiz scores or learning progress</li>
+          <li>Word-of-the-Day state</li>
+          <li>Onboarding completion status</li>
+          <li>Theme and display preferences</li>
+          <li>Other app settings selected by you</li>
+        </ul>
+
+        <p>
+          This information is used only to provide the application's local
+          features. LafzX does not send this information to the developer or
+          to an external server.
+        </p>
+
+        <div class="notice">
+          Removing the app, clearing its storage, or resetting the device may
+          permanently delete locally stored favourites, history, progress, and
+          settings.
+        </div>
+      </section>
+
+      <section id="permissions">
+        <h2>4. App Permissions</h2>
+
+        <p>
+          LafzX is designed to work without dangerous Android permissions.
+          It does not require access to your contacts, camera, microphone,
+          location, SMS messages, call logs, or personal media.
+        </p>
+
+        <p>
+          If a future version introduces a feature that requires an additional
+          Android permission, the application will request that permission
+          through the Android permission system and this Privacy Policy will
+          be updated where necessary.
+        </p>
+      </section>
+
+      <section id="internet">
+        <h2>5. Internet and Network Access</h2>
+
+        <p>
+          The current version of LafzX is designed to operate fully offline
+          and does not require an internet connection for its main dictionary,
+          search, quiz, favourites, history, or locally available audio
+          features.
+        </p>
+
+        <p>
+          The application does not use the Android
+          <code>INTERNET</code> permission in the audited release.
+        </p>
+
+        <p>
+          Visiting this Privacy Policy through a web browser or downloading
+          the app from Google Play may require internet access, but that access
+          is provided by your browser, Google Play, or the operating system—not
+          by LafzX itself.
+        </p>
+      </section>
+
+      <section id="third-parties">
+        <h2>6. Third-Party Services</h2>
+
+        <p>
+          LafzX does not integrate third-party advertising, analytics,
+          tracking, social-login, cloud-storage, or behavioural-profiling
+          services.
+        </p>
+
+        <p>
+          When you download or update LafzX through Google Play, Google may
+          process information under its own terms and privacy policies. This
+          activity is controlled by Google Play and the Android operating
+          system, not by LafzX.
+        </p>
+
+        <p>
+          When you use Android's Share function, the content you choose to
+          share is passed to the application you select. The receiving
+          application handles that information according to its own privacy
+          practices.
+        </p>
+      </section>
+
+      <section id="advertising">
+        <h2>7. Advertising, Analytics, and Tracking</h2>
+
+        <p>LafzX does not include:</p>
+
+        <ul>
+          <li>Advertisements</li>
+          <li>Advertising SDKs</li>
+          <li>Behavioural analytics</li>
+          <li>Tracking pixels</li>
+          <li>User-profiling systems</li>
+          <li>Cross-app tracking</li>
+          <li>Personalised advertising</li>
+          <li>Data-broker integrations</li>
+        </ul>
+
+        <p>
+          We do not sell, rent, license, or share personal information because
+          the application does not collect personal information.
+        </p>
+      </section>
+
+      <section id="backup">
+        <h2>8. Android Backup and Device Transfer</h2>
+
+        <p>
+          Depending on your Android version, device manufacturer, Google
+          account settings, and backup configuration, Android may back up or
+          transfer certain application preferences or local data when you
+          restore or move to another device.
+        </p>
+
+        <p>
+          Android backup and device-transfer processes are controlled by the
+          Android operating system and your device or Google account settings.
+          LafzX does not independently upload your local data to a developer
+          server.
+        </p>
+
+        <p>
+          You can review or manage Android backup options through your device's
+          system settings.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>9. Children's Privacy</h2>
+
+        <p>
+          LafzX is an educational dictionary that may be useful to students,
+          including younger learners. The application does not knowingly
+          collect personal information from children or adults.
+        </p>
+
+        <p>
+          LafzX does not require users to create an account, provide contact
+          details, enable location access, or submit personal content.
+        </p>
+
+        <p>
+          Parents and guardians should supervise children's general device use
+          and review the policies of Google Play, Android, and any applications
+          used through Android's Share feature.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>10. Data Security</h2>
+
+        <p>
+          LafzX minimises privacy risk by operating offline and avoiding the
+          collection of personal information.
+        </p>
+
+        <p>
+          Local application data is protected by the security controls provided
+          by Android and your device. However, no device or storage method can
+          be guaranteed to be completely secure.
+        </p>
+
+        <p>You can improve the security of your local data by:</p>
+
+        <ul>
+          <li>Using a secure screen lock</li>
+          <li>Keeping Android and Google Play Protect updated</li>
+          <li>Installing LafzX only from an authorised source</li>
+          <li>Avoiding modified or unofficial APK files</li>
+          <li>Protecting access to your Google account and device backups</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <h2>11. Data Retention and Deletion</h2>
+
+        <p>
+          Locally stored app information remains on your device until it is
+          removed through the application's available controls, Android
+          settings, clearing app storage, uninstalling the application, or
+          resetting the device.
+        </p>
+
+        <p>
+          Because LafzX does not maintain user accounts or developer-operated
+          cloud storage, there is no remote LafzX account or server record to
+          delete.
+        </p>
+
+        <h3>How to delete LafzX data</h3>
+
+        <p>
+          You can normally delete locally stored information by opening:
+        </p>
+
+        <p>
+          <strong>
+            Android Settings → Apps → LafzX → Storage → Clear storage
+          </strong>
+        </p>
+
+        <p>
+          You may also uninstall LafzX to remove its locally stored application
+          data. Device backups may be handled separately by Android or your
+          Google account settings.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>12. Changes to This Privacy Policy</h2>
+
+        <p>
+          This Privacy Policy may be updated when LafzX features, privacy
+          practices, legal requirements, or distribution arrangements change.
+        </p>
+
+        <p>
+          When the policy is updated, the revised version will display a new
+          “Last updated” date at the top of this page.
+        </p>
+
+        <p>
+          Significant privacy-related changes may also be communicated through
+          the app, its Google Play listing, release notes, or another
+          appropriate method.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>13. Contact Us</h2>
+
+        <p>
+          For privacy questions, support requests, or concerns relating to
+          LafzX, contact:
+        </p>
+
+        <div class="contact-card">
+          <p>
+            <strong>Application:</strong><br />
+            LafzX
+          </p>
+
+          <p>
+            <strong>Package name:</strong><br />
+            com.lafzx.dictionary
+          </p>
+
+          <p>
+            <strong>Support email:</strong><br />
+            <a href="mailto:YOUR_SUPPORT_EMAIL@example.com">
+              YOUR_SUPPORT_EMAIL@example.com
+            </a>
+          </p>
+        </div>
+
+        <div class="notice">
+          Before publishing this page, replace
+          <strong>shmimmai025@gmail.com</strong> with a real email
+          address that you regularly monitor.
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <p>
+        © 2026 <span class="footer-brand">LafzX</span>.
+        All rights reserved.
+      </p>
+
+      <p>
+        Offline English-to-Urdu dictionary and vocabulary-learning application.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
+```
